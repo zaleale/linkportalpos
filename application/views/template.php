@@ -164,8 +164,8 @@
                             <i class="fa fa-archive"></i> <span>Product Knowledge</span>
                         </a>
                     </li>
-                    <li <?= $this->uri->segment(1) == 'kendali-ipos' ? 'class="active"' : '' ?>>
-                        <a href="<?= site_url('kendali-ipos') ?>">
+                    <li <?= $this->uri->segment(1) == 'kendali_ipos' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('kendali_ipos') ?>">
                             <i class="fa fa-motorcycle"></i> <span>Kendali I Pos</span>
                         </a>
                     </li>

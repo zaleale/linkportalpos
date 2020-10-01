@@ -1,10 +1,11 @@
 <section class="content-header">
     <h1>
-        Product Knowledge
+        Kendali I Pos
+        <small>Informasi Resi</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-        <li class="active">Alamat Email Kiriman Impor</li>
+        <li class="active"> Kendali I Pos</li>
     </ol>
 </section>
 
@@ -12,9 +13,9 @@
 <section class="content">
     <div class="box">
         <div class="box-header">
-            <h3 class="box-title"><?= ucfirst($page) ?> Alamat Email Kiriman Impor </h3>
+            <h3 class="box-title"><?= ucfirst($page) ?> Kendali I Pos</h3>
             <div class="pull-right">
-                <a href="<?= site_url('alamat_email') ?>" class="btn btn-warning btn-flat">
+                <a href="<?= site_url('kendali_ipos') ?>" class="btn btn-warning btn-flat">
                     <i class="fa fa-user-undo"></i>Back
                 </a>
             </div>
@@ -22,20 +23,24 @@
         <div class="box-body">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <form action="<?= site_url('alamat_email/process') ?>" method="post">
+                    <form action="<?= site_url('kendali_ipos/process') ?>" method="post">
                         <form>
                             <div class="form-group">
-                                <label>Nama Kantor Pos</label>
-                                <input type="text" name="nama" value="<?= $row->nama ?>" class="form-control">
+                                <input type="hidden" name="id" value="<?= $row->kendali_ipos_id ?>">
+                                <label>Nama Aplikasi</label>
+                                <input type="text" name="nama_aplikasi" value="<?= $row->nama_aplikasi ?>" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <input type="hidden" name="id" value="<?= $row->alamat_email_id ?>">
-                                <label>Email</label>
-                                <input type="text" name="email" value="<?= $row->email ?>" class="form-control" required>
+                                <label>User</label>
+                                <input type="text" name="user" class="form-control" required><?= $row->user ?></input>
                             </div>
                             <div class="form-group">
-                                <label>No Telepon</label>
-                                <input type="number" name="no_telepon" value="<?= $row->no_telepon ?>" class="form-control" placeholder="Ketikan angka nya saja">
+                                <label>Password</label>
+                                <input type="text" name="password" class="form-control" required><?= $row->password ?></input>
+                            </div>
+                            <div class="form-group">
+                                <label>Link</label>
+                                <textarea name="link" class="form-control" required><?= $row->link ?></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="<?= $page ?>" class="btn btn-success btn-flat"><i class="fa fa-paper-plane">Save</i></button>
