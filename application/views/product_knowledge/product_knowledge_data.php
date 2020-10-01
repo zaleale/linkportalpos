@@ -14,11 +14,11 @@
     <div class="box">
         <div class="box-header">
             <h3 class="box-title">Link Product Knowledge</h3>
-            <div class="pull-right">
+            <!-- <div class="pull-right">
                 <a href="<?= site_url('product_knowledge/add') ?>" class="btn btn-primary btn-flat">
                     <i class="fa fa-plus"></i>Create
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="box-body table-responsive">
             <!-- <?php print_r($row->result()) ?> -->
@@ -30,7 +30,7 @@
                         <th>User</th>
                         <th>Password</th>
                         <th>Link</th>
-                        <th>Actions</th>
+                        <!-- <th>Actions</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -41,15 +41,15 @@
                             <td><?= $data->nama_aplikasi ?></td>
                             <td><?= $data->user ?></td>
                             <td><?= $data->password ?></td>
-                            <td><?= $data->link ?></td>
-                            <td class="text=center" width="180px">
+                            <td><a href="http://localhost:8088/mypos/" target='_blank'><?= $data->link ?></a></td>
+                            <!-- <td class="text=center" width="180px">
                                 <a href="<?= site_url('product_knowledge/edit/' . $data->product_knowledge_id) ?>" class="btn btn-primary btn-xs">
                                     <i class="fa fa-pencil"></i>Update
                                 </a>
                                 <a href="<?= site_url('product_knowledge/del/' . $data->product_knowledge_id) ?>" onclick="return confirm('Yakin hapus data?')" class="btn btn-danger btn-xs">
                                     <i class="fa fa-trash"></i>Delete
                                 </a>
-                            </td>
+                            </td> -->
                         </tr>
                     <?php
                     } ?>

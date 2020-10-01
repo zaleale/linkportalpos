@@ -23,8 +23,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://192.168.21.55:80/linkportalpos/'; 
-// $config['base_url'] = 'http://localhost:80/mypos/';
+// $config['base_url'] = 'http://192.168.21.55:80/linkportalpos/'; 
+$config['base_url'] = 'http://localhost:8088/linkportalpos/';
 
 /*
 |--------------------------------------------------------------------------

@@ -13,35 +13,35 @@ class Product_knowledge_m extends CI_Model
         return $query;
     }
 
-    // public function add($post)
-    // {
-    //     //tambah dan edit biar satu form
-    //     $params = [
-    //         'name' => $post['customer_name'],
-    //         'gender' => $post['gender'],
-    //         'phone' => $post['phone'],
-    //         'address' => $post['addr'],
-    //     ];
-    //     $this->db->insert('customer', $params);
-    // }
+    public function add($post)
+    {
+        //tambah dan edit biar satu form
+        $params = [
+            'nama_aplikasi' => $post['nama_aplikasi'],
+            'user' => $post['user'],
+            'password' => $post['password'],
+            'link' => $post['link'],
+        ];
+        $this->db->insert('product_knowledge', $params);
+    }
 
-    // public function edit($post)
-    // {
-    //     //tambah dan edit biar satu form
-    //     $params = [
-    //         'name' => $post['customer_name'],
-    //         'gender' => $post['gender'],
-    //         'phone' => $post['phone'],
-    //         'address' => $post['addr'],
-    //         'updated' => date('Y-m-d H:i:s')
-    //     ];
-    //     $this->db->where('customer_id', $post['id']);
-    //     $this->db->update('customer', $params);
-    // }
+    public function edit($post)
+    {
+        //tambah dan edit biar satu form
+        $params = [
+            'nama_aplikasi' => $post['nama_aplikasi'],
+            'user' => $post['user'],
+            'password' => $post['password'],
+            'link' => $post['link'],
+            'updated' => date('Y-m-d H:i:s')
+        ];
+        $this->db->where('product_knowledge_id', $post['id']);
+        $this->db->update('product_knowledge', $params);
+    }
 
-    // public function del($id)
-    // {
-    //     $this->db->where('customer_id', $id);
-    //     $this->db->delete('customer');
-    // }
+    public function del($id)
+    {
+        $this->db->where('product_knowledge_id', $id);
+        $this->db->delete('product_knowledge');
+    }
 }

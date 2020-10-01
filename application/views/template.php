@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<!-- <link rel="icon" 
+    <!-- <link rel="icon" 
       type="image/jpg" 
       href="/views/myicon.jpg" />  -->
 
@@ -46,9 +46,7 @@
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>L</b>P</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>POS</b>&nbsp; Indonesia</span>
-            </a>
-            <!-- Header Navbar: style can be found in header.less -->
+                <span class="logo-lg">Link Portal <b>POS</b></span> </a> <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -165,7 +163,7 @@
                         <a href="<?= site_url('product_knowledge') ?>">
                             <i class="fa fa-archive"></i> <span>Product Knowledge</span>
                         </a>
-                    </li>                    
+                    </li>
                     <li <?= $this->uri->segment(1) == 'kendali-ipos' ? 'class="active"' : '' ?>>
                         <a href="<?= site_url('kendali-ipos') ?>">
                             <i class="fa fa-motorcycle"></i> <span>Kendali I Pos</span>
@@ -193,30 +191,30 @@
                     </li>
 
                     <!-- <li class="treeview <?= $this->uri->segment(1) == 'category' || $this->uri->segment(1) == 'unit' || $this->uri->segment(1) == 'alamat_email' ||
-                                            $this->uri->segment(1) == 'batas_pengaduan' || $this->uri->segment(1) == 'gantirugi_dn' ||
-                                            $this->uri->segment(1) == 'posgiro_mobile'  || $this->uri->segment(1) == 'posgiro_mobile'  ||
-                                            $this->uri->segment(1) == 'complainhandling_pgm' ||  $this->uri->segment(1) == 'bantuansosial_tunai'  ||
-                                            $this->uri->segment(1) == 'qposin_aja'  ||   $this->uri->segment(1) == 'complainhandling_qposinaja'  ||
-                                            $this->uri->segment(1) == 'q9'  ||  $this->uri->segment(1) == 'e_commerce'  ||
-                                            $this->uri->segment(1) == 'e_tilang'  || $this->uri->segment(1) == 'weselpos_dn'  ||
-                                            $this->uri->segment(1) == 'weselpos_instan'  || $this->uri->segment(1) == 'weselpos_prima'  ||
-                                            $this->uri->segment(1) == 'weselpos_kemitraan_dn'  || $this->uri->segment(1) == 'cashaccount_dn'  ||
-                                            $this->uri->segment(1) == 'weselpos_ln'  || $this->uri->segment(1) == 'remitansi_bni'  ||
-                                            $this->uri->segment(1) == 'firecash_bca'  || $this->uri->segment(1) == 'moneygram'  ||
-                                            $this->uri->segment(1) == 'tranfast'  || $this->uri->segment(1) == 'btn_ebatarapos'  ||
-                                            $this->uri->segment(1) == 'pobox'  || $this->uri->segment(1) == 'linkaja'  ||
-                                            $this->uri->segment(1) == 'tamasia'  ? 'active' : '' ?>"> -->
-<!-- 
+                                                    $this->uri->segment(1) == 'batas_pengaduan' || $this->uri->segment(1) == 'gantirugi_dn' ||
+                                                    $this->uri->segment(1) == 'posgiro_mobile'  || $this->uri->segment(1) == 'posgiro_mobile'  ||
+                                                    $this->uri->segment(1) == 'complainhandling_pgm' ||  $this->uri->segment(1) == 'bantuansosial_tunai'  ||
+                                                    $this->uri->segment(1) == 'qposin_aja'  ||   $this->uri->segment(1) == 'complainhandling_qposinaja'  ||
+                                                    $this->uri->segment(1) == 'q9'  ||  $this->uri->segment(1) == 'e_commerce'  ||
+                                                    $this->uri->segment(1) == 'e_tilang'  || $this->uri->segment(1) == 'weselpos_dn'  ||
+                                                    $this->uri->segment(1) == 'weselpos_instan'  || $this->uri->segment(1) == 'weselpos_prima'  ||
+                                                    $this->uri->segment(1) == 'weselpos_kemitraan_dn'  || $this->uri->segment(1) == 'cashaccount_dn'  ||
+                                                    $this->uri->segment(1) == 'weselpos_ln'  || $this->uri->segment(1) == 'remitansi_bni'  ||
+                                                    $this->uri->segment(1) == 'firecash_bca'  || $this->uri->segment(1) == 'moneygram'  ||
+                                                    $this->uri->segment(1) == 'tranfast'  || $this->uri->segment(1) == 'btn_ebatarapos'  ||
+                                                    $this->uri->segment(1) == 'pobox'  || $this->uri->segment(1) == 'linkaja'  ||
+                                                    $this->uri->segment(1) == 'tamasia'  ? 'active' : '' ?>"> -->
+                    <!-- 
                         <a href="#">
                             <i class="fa fa-archive"></i> <span>Products Knowledge</span>
                             <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                         </a> -->
-                        <!-- <ul class="treeview-menu">
+                    <!-- <ul class="treeview-menu">
                             <li <?= $this->uri->segment(1) == 'category' ? 'class="active"' : '' ?>><a href="<?= site_url('category') ?>"><i class="fa fa-circle-o"></i> Kiriman Domestik</a></li>
                             <li <?= $this->uri->segment(1) == 'unit' ? 'class="active"' : '' ?>><a href="<?= site_url('unit') ?>"><i class="fa fa-circle-o"></i> Kiriman Internasional</a></li>
                             <li <?= $this->uri->segment(1) == 'alamat_email' ? 'class="active"' : '' ?>><a href="<?= site_url('alamat_email') ?>"><i class="fa fa-circle-o"></i> Alamat Email Kiriman Impor</a></li> -->
-                            <!-- contoh -->
-                            <!-- <li <?= $this->uri->segment(1) == 'batas_pengaduan' ? 'class="active"' : '' ?>><a href="<?= site_url('batas_pengaduan') ?>"><i class="fa fa-circle-o"></i> Batas Pengaduan Kiriman</a></li>
+                    <!-- contoh -->
+                    <!-- <li <?= $this->uri->segment(1) == 'batas_pengaduan' ? 'class="active"' : '' ?>><a href="<?= site_url('batas_pengaduan') ?>"><i class="fa fa-circle-o"></i> Batas Pengaduan Kiriman</a></li>
                             <li <?= $this->uri->segment(1) == 'gantirugi_dn' ? 'class="active"' : '' ?>><a href="<?= site_url('gantirugi_dn') ?>"><i class="fa fa-circle-o"></i> Ganti Rugi Kir.Dalam Negeri</a></li>
                             <li <?= $this->uri->segment(1) == 'posgiro_mobile' ? 'class="active"' : '' ?>><a href="<?= site_url('posgiro_mobile') ?>"><i class="fa fa-circle-o"></i> Pos Giro Mobile</a></li>
                             <li <?= $this->uri->segment(1) == 'complainhandling_pgm' ? 'class="active"' : '' ?>><a href="<?= site_url('complainhandling_pgm') ?>"><i class="fa fa-circle-o"></i> Complain Handling <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PGM / MAgenpos</a></li>

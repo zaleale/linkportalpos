@@ -18,64 +18,64 @@ class Product_knowledge extends CI_Controller
         $this->template->load('template', 'product_knowledge/product_knowledge_data', $data);
     }
 
-    // public function add()
-    // {
-    //     //tambah dan edit biar satu form
-    //     $customer = new stdClass();
-    //     $customer->customer_id = null;
-    //     $customer->name = null;
-    //     $customer->gender = null;
-    //     $customer->phone = null;
-    //     $customer->address = null;
-    //     $data = array(
-    //         'page' => 'add',
-    //         'row' => $customer
-    //     );
-    //     $this->template->load('template', 'customer/customer_form', $data);
-    // }
+    public function add()
+    {
+        //tambah dan edit biar satu form
+        $product_knowledge = new stdClass();
+        $product_knowledge->product_knowledge_id = null;
+        $product_knowledge->nama_aplikasi = null;
+        $product_knowledge->user = null;
+        $product_knowledge->password = null;
+        $product_knowledge->link = null;
+        $data = array(
+            'page' => 'add',
+            'row' => $product_knowledge
+        );
+        $this->template->load('template', 'product_knowledge/product_knowledge_form', $data);
+    }
 
-    // public function edit($id)
-    // {
-    //     $query = $this->customer_m->get($id);
-    //     if ($query->num_rows() > 0) {
-    //         $customer = $query->row();
-    //         $data = array(
-    //             'page' => 'edit',
-    //             'row' => $customer
-    //         );
-    //         $this->template->load('template', 'customer/customer_form', $data);
-    //     } else {
-    //         echo "<script>alert ('data tidak ditemukan');";
-    //         echo "<script> window.location='" . site_url('customer') . "';</script>";
-    //     }
-    // }
+    public function edit($id)
+    {
+        $query = $this->product_knowledge_m->get($id);
+        if ($query->num_rows() > 0) {
+            $product_knowledge = $query->row();
+            $data = array(
+                'page' => 'edit',
+                'row' => $product_knowledge
+            );
+            $this->template->load('template', 'product_knowledge/product_knowledge_form', $data);
+        } else {
+            echo "<script>alert ('data tidak ditemukan');";
+            echo "<script> window.location='" . site_url('product_knowledge') . "';</script>";
+        }
+    }
 
-    // public function process()
-    // {
-    //     $post = $this->input->post(null, TRUE);
-    //     if (isset($_POST['add'])) {
-    //         $this->customer_m->add($post);
-    //     } else if (isset($_POST['edit'])) {
-    //         $this->customer_m->edit($post);
-    //     }
+    public function process()
+    {
+        $post = $this->input->post(null, TRUE);
+        if (isset($_POST['add'])) {
+            $this->product_knowledge_m->add($post);
+        } else if (isset($_POST['edit'])) {
+            $this->product_knowledge_m->edit($post);
+        }
 
-    //     if ($this->db->affected_rows() > 0) {
-    //         echo "<script>alert ('data berhasil disimpan');</script>";
-    //     }
-    //     echo "<script> window.location='" . site_url('customer') . "';</script>";
-    // }
+        if ($this->db->affected_rows() > 0) {
+            echo "<script>alert ('data berhasil disimpan');</script>";
+        }
+        echo "<script> window.location='" . site_url('product_knowledge') . "';</script>";
+    }
 
-    // public function del($id)
-    // {
-    //     //ini method post
-    //     // $id = $this->input->post('user_id');
+    public function del($id)
+    {
+        //ini method post
+        // $id = $this->input->post('user_id');
 
-    //     //ini method get
-    //     $this->customer_m->del($id);
+        //ini method get
+        $this->product_knowledge_m->del($id);
 
-    //     if ($this->db->affected_rows() > 0) {
-    //         echo "<script>alert ('data berhasil dihapus');</script>";
-    //     }
-    //     echo "<script> window.location='" . site_url('customer') . "';</script>";
-    // }
+        if ($this->db->affected_rows() > 0) {
+            echo "<script>alert ('data berhasil dihapus');</script>";
+        }
+        echo "<script> window.location='" . site_url('product_knowledge') . "';</script>";
+    }
 }
