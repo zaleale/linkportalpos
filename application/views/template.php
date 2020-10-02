@@ -179,13 +179,13 @@
                             <i class="fa fa-headphones"></i> <span>Customer Complain Handling</span>
                         </a>
                     </li>
-                    <li <?= $this->uri->segment(1) == 'bea_cukai' ? 'class="active"' : '' ?>>
-                        <a href="<?= site_url('bea_cukai') ?>">
+                    <li <?= $this->uri->segment(1) == 'beacukai' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('beacukai') ?>">
                             <i class="fa fa-money"></i> <span>Bea Cukai</span>
                         </a>
                     </li>
                     <li <?= $this->uri->segment(1) == 'lacakresi' ? 'class="active"' : '' ?>>
-                        <a href="<?= site_url('lacak_resi') ?>">
+                        <a href="<?= site_url('lacakresi') ?>">
                             <i class="fa fa-sticky-note-o"></i> <span>Lacak Resi</span>
                         </a>
                     </li>
