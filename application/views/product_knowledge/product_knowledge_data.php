@@ -41,7 +41,7 @@
                             <td><?= $data->nama_aplikasi ?></td>
                             <td><?= $data->user ?></td>
                             <td><?= $data->password ?></td>
-                            <td><a href="http://192.168.21.55/mypos/" target='_blank'><?= $data->link ?></a></td>
+                            <td><a href="http://192.168.21.55:8088/mypos/" target='_blank'><?= $data->link ?></a></td>
                             <!-- <td class="text=center" width="180px">
                                 <a href="<?= site_url('product_knowledge/edit/' . $data->product_knowledge_id) ?>" class="btn btn-primary btn-xs">
                                     <i class="fa fa-pencil"></i>Update

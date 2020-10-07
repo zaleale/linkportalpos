@@ -96,6 +96,77 @@
         </div>
         <!-- /.col -->
 
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-bank"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Alamat Kantor Pos</span>
+              <span class="info-box-number"></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-white"><i class="fa fa-envelope"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Lacak Weselpos</span>
+              <span class="info-box-number"></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-orange"><i class="fa fa-dot-circle-o"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Omni Channel</span>
+              <span class="info-box-number"></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-check-square"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Cek Tarif</span>
+              <span class="info-box-number"></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-question"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Panduan Solusi</span>
+              <span class="info-box-number"></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
       </div>
       <!-- /.row -->
 </section>

@@ -61,8 +61,8 @@
                         <!-- Tasks: style can be found in dropdown.less -->
                         <li class="dropdown tasks-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-flag-o"></i>
-                                <span class="label label-danger">9</span>
+                                <!-- <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">9</span> -->
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="header">You have 9 tasks</li>
@@ -94,13 +94,13 @@
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?= base_url() ?>assets/dist/img/avatar.png" class="user-image" alt="User Image">
+                                <img src="<?= base_url() ?>assets/dist/img/avatar5.png" class="user-image" alt="User Image">
                                 <span class="hidden-xs"><?= ucfirst($this->fungsi->user_login()->username) ?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="<?= base_url() ?>assets/dist/img/avatar.png" class="img-circle" alt="User Image">
+                                    <img src="<?= base_url() ?>assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
 
                                     <p>
                                         <?= ucfirst($this->fungsi->user_login()->name) ?>
@@ -133,7 +133,7 @@
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="<?= base_url() ?>assets/dist/img/avatar.png" class="img-circle" alt="User Image">
+                        <img src="<?= base_url() ?>assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
                         <p> <?= ucfirst($this->fungsi->user_login()->username) ?></p>
@@ -189,7 +189,31 @@
                             <i class="fa fa-sticky-note-o"></i> <span>Lacak Resi</span>
                         </a>
                     </li>
-
+                    <li <?= $this->uri->segment(1) == 'alamat_kp' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('alamat_kp') ?>">
+                            <i class="fa fa-bank"></i> <span>Alamat Kantor Pos</span>
+                        </a>
+                    </li>
+                    <li <?= $this->uri->segment(1) == 'lacakwesel' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('lacakwesel') ?>">
+                            <i class="fa fa-envelope"></i> <span>Lacak Weselpos</span>
+                        </a>
+                    </li>
+                    <li <?= $this->uri->segment(1) == 'omni' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('omni') ?>">
+                            <i class="fa fa-dot-circle-o"></i> <span>Omni Channel</span>
+                        </a>
+                    </li>
+                    <li <?= $this->uri->segment(1) == 'cek_tarif' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('cek_tarif') ?>">
+                            <i class="fa fa-check-square"></i> <span>Cek Tarif</span>
+                        </a>
+                    </li>
+                    <li <?= $this->uri->segment(1) == 'panduan_solusi' ? 'class="active"' : '' ?>>
+                        <a href="<?= site_url('panduan_solusi') ?>">
+                            <i class="fa fa-question"></i> <span>Panduan Solusi</span>
+                        </a>
+                    </li>
                     <!-- <li class="treeview <?= $this->uri->segment(1) == 'category' || $this->uri->segment(1) == 'unit' || $this->uri->segment(1) == 'alamat_email' ||
                                                     $this->uri->segment(1) == 'batas_pengaduan' || $this->uri->segment(1) == 'gantirugi_dn' ||
                                                     $this->uri->segment(1) == 'posgiro_mobile'  || $this->uri->segment(1) == 'posgiro_mobile'  ||
